@@ -1,0 +1,28 @@
+import java .io.*;
+
+public class MatrixSum {
+	public static void main(String args[])throws IOException
+	{
+		BufferedReader s = new BufferedReader( new InputStreamReader(System.in));
+		int a[][]= new int[3][3];
+		int b[][]= new int[3][3];
+		int c,d;
+		int arrsum[][]=new int[3][3];
+		 for (c=0;c<3;c++)
+		 {
+			 for(d=0;d<3;d++)
+			 {
+				 a[c][d]=Integer.parseInt(s.readLine());//first matrix
+				 b[c][d]=Integer.parseInt(s.readLine());//second matrix
+			 }
+		 }
+				for (c=0;c<3;c++)
+				{
+					for(d=0;d<3;d++)
+					{
+				arrsum[c][d]=a[c][d]+b[c][d];
+	}
+
+}
+System.out.print(arrsum);
+	}}

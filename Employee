@@ -1,0 +1,53 @@
+import java .io.*;
+
+public class Employee {
+	BufferedReader b= new BufferedReader(new InputStreamReader(System.in));
+	void Employee()
+	{
+		String s="";
+		String s1="";
+		 int n;
+		
+				
+	}
+	public static void main(String args[])throws IOException
+	{
+		
+		String s= new String();
+		String s1= new String();
+		int n=0;
+		
+		
+		Employee ob=new Employee();
+		ob.name(s);
+		ob.yearjoin(n);
+		ob.address(s1);
+	}
+	void name(String s)throws IOException
+	{
+		System.out.println("Enter the name of employee,year of joining and address");
+		
+		s=b.readLine();
+			System.out.print(s);
+	}
+	 
+	void yearjoin(int n)throws IOException
+	
+	{
+		n=Integer.parseInt(b.readLine());
+		System.out.print( "  " + n);
+	}
+	
+	void address(String s1)throws IOException
+	{
+		s1=b.readLine();
+		System.out.print("    " + s1);
+		
+	}
+	
+		
+		
+		
+	
+	
+}
